@@ -1,0 +1,64 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="Login_Register.css">
+        
+        
+    </head>
+    <body>
+
+<div class="container">
+    <form class="signUp">
+      <h3>Login</h3>
+      
+      
+    </br></br><br/>
+      <input class="w100" type="email" placeholder=" UserName" reqired autocomplete='off' /></br></br>
+      <input  class="w100" type="password" placeholder="Password" reqired />
+      <!-- <input type="password" placeholder="Verify Password" reqired /> -->
+      <button class="form-btn sx log-in" type="button" >Register</button>
+      <button class="form-btn dx" type="submit">Log In</button>
+    </form>
+    <form class="signIn">
+      <h3>Registration</h3>
+      
+      
+      <input type="text" placeholder="Name" autocomplete='off' reqired />
+      <input type="text" placeholder="State" reqired />
+      <input type="text" placeholder="City" reqired />
+      <textarea  class="w100" id="add" name="Address" placeholder="Address"  style="text-align: center; border:none; font-size: larger; color:#e68a00;"  rows="4" cols="30"></textarea>
+    </br><input type="text" placeholder="Phone" reqired />
+      <input type="email" placeholder="Email" reqired />
+      
+      <input type="password" placeholder="Password" reqired />
+      
+      <button class="form-btn sx back" type="button">Back</button>
+      <button class="form-btn dx" type="submit">Submit</button>
+    </form>
+  </div>
+  
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script>
+                $(".log-in").click(function()
+                {
+                  
+                    $(".signIn").addClass("active-dx");
+                    $(".signUp").addClass("inactive-sx");
+                    $(".signUp").removeClass("active-sx");
+                    $(".signIn").removeClass("inactive-dx");
+                });
+
+                        $(".back").click(function()
+                        {
+                        $(".signUp").addClass("active-sx");
+                        $(".signIn").addClass("inactive-dx");
+                        $(".signIn").removeClass("active-dx");
+                        $(".signUp").removeClass("inactive-sx");
+                        });
+
+ </script>
+
+
+</body>
+</html>
